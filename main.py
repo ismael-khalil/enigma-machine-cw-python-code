@@ -136,7 +136,7 @@ input_from_user_Message = input("what is the MESSAGE  ")            #input the m
 for q in input_from_user_Message: # FOR LOOP that loop around the message and takes evey letter
     if q == " ":
         encripted = encripted + " "                # If the program finds a space breaks out the loop and appends a space
-    if q not in x.alphabet:
+    elif q not in x.alphabet:
         print("sorry I did not understand" + " " + q + " " + "I will Pass a space)")
         encripted = encripted + " "
     else:
